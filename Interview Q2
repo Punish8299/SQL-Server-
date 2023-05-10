@@ -1,0 +1,7 @@
+Declare @Emp Table (Empld Int,Email Varchar(100)) Insert Into @Emp Values
+
+(1,'Test_1@gmail.com'),(1,'Test_2@gmail.com'),(1 Test_3@gmail.com'),(1,Test_4@gmail.com'),(2,Test _5@gmail.com'),
+
+(2,'Test_6@gmail.com'),(2,'Test_7@gmail.com'),(2,Tes t_8@gmail.com')
+
+Select EMPID,String_AGG(Email,',') From @Emp Group By EMPID
