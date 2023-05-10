@@ -1,4 +1,4 @@
-Declare @Tablet Table (Id Int,Locations
+Declare @Table1 Table (Id Int,Locations
 
 Varchar(100))
 
@@ -6,7 +6,7 @@ Declare @Table2 Table (Id Int,Locations
 
 Varchar(100))
 
-Insert Into @Table1 Values (105,BANGALORE (102,"),(103, HYDERABAD),(101,CHENNAI)
+Insert Into @Table1 Values (105,'BANGALORE' (102, ''),(103, HYDERABAD),(101,CHENNAI)
 
 Insert Into @Table2 Values (103,5),(101,").
 
