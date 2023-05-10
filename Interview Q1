@@ -1,0 +1,25 @@
+Declare @Tablet Table (Id Int,Locations
+
+Varchar(100))
+
+Declare @Table2 Table (Id Int,Locations
+
+Varchar(100))
+
+Insert Into @Table1 Values (105,BANGALORE (102,"),(103, HYDERABAD),(101,CHENNAI)
+
+Insert Into @Table2 Values (103,5),(101,").
+
+(104,KOCHI),(105,DELHI),(102,MUMBAI)
+
+Select isnull(a.id,b.id),ISNULL(nullif(a.locations,"),b.locations )+
+
+CASE WHEN nullif(a.locations,"') IS NOT NULL AND
+
+nullif(b.locations,") IS NOT NULL THEN "+b.locations ELSE "END
+
+From @Table1 as a
+
+FULL JOIN @Table2 as b
+
+ON a.id=b.id
