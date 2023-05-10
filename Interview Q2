@@ -4,4 +4,14 @@ Declare @Emp Table (Empld Int,Email Varchar(100)) Insert Into @Emp Values
 
 (2,'Test_6@gmail.com'),(2,'Test_7@gmail.com'),(2,Tes t_8@gmail.com')
 
-Select EMPID,String_AGG(Email,',') From @Emp Group By EMPID
+Select Empld,String_AGG(Email,',') From @Emp Group By EMPID
+String_AGG not used in SMSS17
+
+select distinct t1. Empld,
+STUFF((SELECT distinct+t2.Email where t1.Empld t2.Empld
+from @Emp t2
+FOR XML PATH(), TYPE
+).value('.', 'NVARCHAR(MAX)')
+,1,0,'') data
+from @Emp t1;
+
