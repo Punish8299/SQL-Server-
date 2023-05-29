@@ -1,3 +1,16 @@
+SQL HAVING clause is similar to the WHERE clause; they are both used to filter rows in a table based on conditions.
+
+HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate functions.
+
+the HAVING clause filters the grouped rows.
+
+The HAVING clause must always be followed by the GROUP BY clause.
+
+➤ It can also contain multiple conditions to filter the grouped results.
+
+These conditions are separated by various operators like AND, OR etc.
+
+EX
 select from EMP_Test
 
 Eselect JOB, sum(sal), count (EMPNO) as Total_Emp
