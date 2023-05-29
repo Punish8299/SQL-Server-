@@ -1,0 +1,13 @@
+select from EMP_Test
+
+Eselect JOB, sum(sal), count (EMPNO) as Total_Emp
+
+from EMP Test
+
+where job is not null
+
+group by JOB
+
+Having sum(sal) between 2000 and 5000
+
+order by Total_Emp;
