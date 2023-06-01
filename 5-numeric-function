@@ -1,0 +1,49 @@
+
+--Numeric Function
+
+--ABS rethe absolute (Positive) value of number
+
+select ABS (-35.8)
+
+--POWER
+
+SELECT POWER(4, 2);
+
+--ROUND specified number of decimal places.
+
+select ROUND (75.377540925, 2)
+
+--SQRT
+
+SELECT SQRT(64);
+
+--CEIL returns the smallest integer greater than or equal to a number
+
+SELECT CEILING (25.75) AS CeilValue; --GREATEST issue in sql server
+
+SELECT GREATEST (1, 2, 5, 8) AS greatest_of_numbers; SELECT GREATEST('6.62', 3.1415, N'7') AS GreatestVal;
+
+GO
+
+--FLOOR return the largest interfer less than or equal to a number
+
+SELECT FLOOR (25.75) AS FloorValue;
+
+--LEAST issue in sql server
+
+SELECT LEAST('6.62', 3.1415, N'7') AS LeastVal;
+
+GO
+
+--MOD MOD() function returns the remainder of a number divided by another number. issue in sql server
+
+DECLARE @m INT
+
+SET @m = 321%11
+
+SELECT @m
+
+select (fn MOD (5, 2))}
+--RAND
+
+SELECT RAND();
